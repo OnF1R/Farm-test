@@ -1,4 +1,7 @@
 <?php
+
+namespace test\src;
+
 class Chicken extends Animal
 {
     public $production;
