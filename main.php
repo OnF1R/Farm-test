@@ -1,6 +1,6 @@
 <?php
 
-namespace test\src;
+
 
 require 'src/Farm.php';
 require 'src/Animal.php';
@@ -9,7 +9,7 @@ require 'src/Cow.php';
 
 
 
-$farm = new Farm;
+$farm = new test\src\Farm;
 
 $farm->registerAnimals(
     [
@@ -18,4 +18,13 @@ $farm->registerAnimals(
     ]
 );
 
-var_dump($farm->getAllProduction());
+$farm->getAllProduction();
+
+$farm->buyAnimals(
+    [
+        'Cow' => 1,
+        'Chicken' => 5,
+    ]
+);
+
+$farm->getAllProduction();
