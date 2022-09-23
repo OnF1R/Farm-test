@@ -2,7 +2,7 @@
 
 namespace test\src;
 
-class Animal
+abstract class Animal
 {
     public $id;
 

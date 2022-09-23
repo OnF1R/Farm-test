@@ -2,7 +2,7 @@
 
 namespace test\src;
 
-class Farm
+final class Farm
 {
     public $animals = [];
     public $productions = [];
