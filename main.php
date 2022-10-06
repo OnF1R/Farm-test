@@ -1,15 +1,10 @@
 <?php
 
+require_once __DIR__ . '/autoload.php';
 
+use test\src\Farm;
 
-require 'src/Farm.php';
-require 'src/Animal.php';
-require 'src/Chicken.php';
-require 'src/Cow.php';
-
-
-
-$farm = new test\src\Farm;
+$farm = new Farm;
 
 $farm->registerAnimals(
     [
