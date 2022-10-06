@@ -10,4 +10,9 @@ abstract class Animal
     {
         $this->id = uniqid();
     }
+
+    public function getProduction()
+    {
+        return rand($this->minCountProduction, $this->maxCountProduction);
+    }
 }

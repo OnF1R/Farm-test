@@ -14,9 +14,4 @@ class Cow extends Animal
         $this->maxCountProduction = 12;
         parent::__construct();
     }
-
-    public function getProduction()
-    {
-        return rand($this->minCountProduction, $this->maxCountProduction);
-    }
 }
